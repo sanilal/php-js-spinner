@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 190 80" style="enable-background:new 0 0 190 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#ED3547;}
+	.st2{fill:#FFFFFF;}
+	.st3{font-family:'BlissExtraBold';}
+	.st4{font-size:35.2023px;}
+</style>
+<g>
+	<g>
+		
+			<image style="overflow:visible;opacity:0.75;" width="191" height="93" xlink:href="CF4EB1A2.png"  transform="matrix(1 0 0 1 -0.3712 -8.3712)">
+		</image>
+		<g>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="10" y1="35.439" x2="180" y2="35.439">
+				<stop  offset="0" style="stop-color:#C0272D"/>
+				<stop  offset="0.162" style="stop-color:#FF1638"/>
+				<stop  offset="0.852" style="stop-color:#FF1638"/>
+				<stop  offset="1" style="stop-color:#C0272D"/>
+			</linearGradient>
+			<path class="st0" d="M166.8,70.9H23.2C15.9,70.9,10,65,10,57.7V13.2C10,5.9,15.9,0,23.2,0h143.6c7.3,0,13.2,5.9,13.2,13.2v44.5
+				C180,65,174.1,70.9,166.8,70.9z"/>
+		</g>
+	</g>
+	<path class="st1" d="M166.8,71.4H23.2c-7.3,0-13.2-5.9-13.2-13.2c0,0,26.3,3.7,86.5-1.5s83.5-43,83.5-43v44.5
+		C180,65.5,174.1,71.4,166.8,71.4z"/>
+	<g>
+		
+			<image style="overflow:visible;opacity:0.75;" width="81" height="52" xlink:href="CF4EB1A1.png"  transform="matrix(1 0 0 1 54.7485 11.7485)">
+		</image>
+		<g>
+			<text transform="matrix(1 0 0 1 61.1706 45.885)" class="st2 st3 st4">SPIN</text>
+		</g>
+	</g>
+</g>
+</svg>

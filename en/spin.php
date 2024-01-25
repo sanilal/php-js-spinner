@@ -36,7 +36,7 @@
           </div>
           
            <h2 class="text-white text-heavy text-center">SPIN TO REVEAL YOUR PRIZE</h2>
-           <div class="spinBtn" onclick="spin()"><img src="../assets/images/spin-button.png" class="img-fluid" alt="SPIN"></div>
+           <button class="spinBtn" id="spinButton" onclick="spin()"><span>SPIN</span></button>
            
              
             </div>

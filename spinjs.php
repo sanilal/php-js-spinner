@@ -43,6 +43,7 @@ function shuffle(array) {
 
 function spin(){
     // wheel.play()
+    document.getElementById('spinButton').removeAttribute('onclick');
      const box = document.querySelector('.wheel');
      const spinner = document.getElementById('spinner');
      const prize = document.getElementById('prize');
@@ -103,17 +104,19 @@ function spin(){
         title.innerHTML = 'CONGRATULATIONS!';
         const subtitle = document.createElement('small');
          subtitle.textContent = 'you have won a free Americana Recipe Book!';
+         prizeImage.className = 'recipebook'
         prizeImage.src = '../assets/images/recipe-book.webp';
         prizeImage.alt = 'Congratulations! you have won AED 100 VOUCHER';
+        disclaimer.className = 'no-disclaimer';
         disclaimer.innerHTML = '' ;
         title.appendChild(subtitle); 
         spinAgaina = document.createElement('a');
         spinAgain.appendChild(spinAgaina);
-        spinAgainimg = document.createElement('img');
-        spinAgaina.className = 'spin-again mt-3 ';
+        spinAgainSpan = document.createElement('span');
+        spinAgaina.className = 'spin-againB mt-3 ';
         spinAgaina.href = 'spin.php?spinid=12'
-        spinAgainimg.src = '../assets/images/spin-again.webp';
-        spinAgaina.appendChild(spinAgainimg);
+        spinAgainSpan.innerHTML = 'SPIN AGAIN <small>with a new receipt</small>';
+        spinAgaina.appendChild(spinAgainSpan);
 
     }
     
