@@ -1,0 +1,550 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/bliss-pro/BlissPro.eot');
+    src: local('../fonts/bliss-pro/Bliss Pro'), local('BlissPro'),
+        url('../fonts/bliss-pro/BlissPro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/bliss-pro/BlissPro.woff') format('woff'),
+        url('../fonts/bliss-pro/BlissPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Bliss Pro';
+	src: url('../fonts/bliss-pro/BlissPro-ExtraBold.eot');
+	src: local('../fonts/bliss-pro/Bliss Pro ExtraBold'), local('BlissPro-ExtraBold'),
+		url('../fonts/bliss-pro/BlissPro-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bliss-pro/BlissPro-ExtraBold.woff') format('woff'),
+		url('../fonts/bliss-pro/BlissPro-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Bliss Pro';
+	src: url('../fonts/bliss-pro/BlissPro-Medium.eot');
+	src: local('../fonts/bliss-pro/Bliss Pro Medium'), local('BlissPro-Medium'),
+		url('../fonts/bliss-pro/BlissPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bliss-pro/BlissPro-Medium.woff') format('woff'),
+		url('../fonts/bliss-pro/BlissPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Bliss Pro';
+	src: url('../fonts/bliss-pro/BlissPro-Bold.eot');
+	src: local('../fonts/bliss-pro/Bliss Pro Bold'), local('BlissPro-Bold'),
+		url('../fonts/bliss-pro/BlissPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bliss-pro/BlissPro-Bold.woff') format('woff'),
+		url('../fonts/bliss-pro/BlissPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Bliss Pro';
+	src: url('../fonts/bliss-pro/BlissPro-Heavy.eot');
+	src: local('../fonts/bliss-pro/Bliss Pro Heavy'), local('BlissPro-Heavy'),
+		url('../fonts/bliss-pro/BlissPro-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bliss-pro/BlissPro-Heavy.woff') format('woff'),
+		url('../fonts/bliss-pro/BlissPro-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Bliss Pro';
+	src: url('../fonts/bliss-pro/BlissPro-Light.eot');
+	src: local('../fonts/bliss-pro/Bliss Pro Light'), local('BlissPro-Light'),
+		url('../fonts/bliss-pro/BlissPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bliss-pro/BlissPro-Light.woff') format('woff'),
+		url('../fonts/bliss-pro/BlissPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/myriad-pro/a89cf050c859a23e4b6d9cf5989acf9e.eot");
+    src: url("../fonts/myriad-pro/a89cf050c859a23e4b6d9cf5989acf9e.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/myriad-pro/a89cf050c859a23e4b6d9cf5989acf9e.woff2")format("woff2"),
+    url("../fonts/myriad-pro/a89cf050c859a23e4b6d9cf5989acf9e.woff")format("woff"),
+    url("../fonts/myriad-pro/a89cf050c859a23e4b6d9cf5989acf9e.ttf")format("truetype"),
+    url("../fonts/myriad-pro/a89cf050c859a23e4b6d9cf5989acf9e.svg#Myriad Pro")format("svg");
+}
+
+@font-face {
+    font-family: "GE SS Two Medium";
+    src: url("../fonts/ge-ss-two-medium/125063e353c1f65c55ba1e3811969217.eot");
+    src: url("../fonts/ge-ss-two-medium/125063e353c1f65c55ba1e3811969217.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ge-ss-two-medium/125063e353c1f65c55ba1e3811969217.woff2")format("woff2"),
+    url("../fonts/ge-ss-two-medium/125063e353c1f65c55ba1e3811969217.woff")format("woff"),
+    url("../fonts/ge-ss-two-medium/125063e353c1f65c55ba1e3811969217.ttf")format("truetype"),
+    url("../fonts/ge-ss-two-medium/125063e353c1f65c55ba1e3811969217.svg#GE SS Two Medium")format("svg");
+}
+
+
+body {
+    font-family: 'Bliss Pro';
+    font-weight: normal;
+    
+}
+.clearfix {
+    overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.arabic {
+    font-family: "GE SS Two Medium";
+}
+.text-white {
+    color: #fff;
+}
+.font-myriad {
+    font-family: "Myriad Pro";
+}
+.font-bliss {
+    font-family: 'Bliss Pro';
+}
+.text-light {
+    font-weight: 300;
+}
+.text-medium {
+    font-weight: 500;
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-ex-bold {
+    font-weight: 800;
+}
+.text-heavy {
+    font-weight: 900;
+}
+.text-center {
+    text-align: center;
+}
+.fontsize1 {
+    font-size: 1rem;
+}
+.fontsize15 {
+    font-size: 1.5rem;
+}
+.fontsize2 {
+    font-size: 2rem;
+}
+.fontsize25 {
+    font-size: 2.5rem;
+}
+.fontsize3 {
+    font-size: 3rem;
+}
+.hideNow {
+    display: none !important;
+}
+.sm-only {
+    display: none;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.d-flex {
+    display: flex;
+}
+.jcc {
+    justify-content: center;
+}
+.aic {
+    align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.outer-wraper {
+    width: 100%;
+    max-width: 100vw;
+    min-height: 100vh;
+    background: url(../images/bg.webp) no-repeat top center;
+    background-size: cover;
+    background-color: #00a0e6;
+}
+section {
+    width: 100%;
+}
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+.header a.logo {
+    max-width: 240px;
+    height: auto;
+    display: flex;
+}
+.header a.logo img {
+    max-width: 100%;
+}
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.win-cash {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+.win-cash img {
+    max-width: 335px;
+    height: auto;
+}
+.win-cash h2 {
+    font-size: 2.8rem;
+}
+.win-cash h2 small {
+    font-size: 1.8rem;
+}
+.termsspl img {
+    max-width: 100%;
+    width: 250px;
+    padding-top: 1rem;
+}
+.select-lang span {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.select-lang a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #fff;
+    text-decoration: none;
+    margin: 1rem 0;
+    padding: 5px 0;
+    border-radius: 15px;
+    border: 2px solid #fbdc00;
+}
+
+/* Form */
+.shop-form input, .shop-form select {
+    width: 100%;
+    outline: none;
+    border: 2px solid #fbdc00;
+    padding: 9px 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+.invoice-upload {
+    width: 100%;
+    outline: none;
+    border: 2px solid #fbdc00;
+    padding: 6px 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.invoice-wraper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.invoice-copy {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #808080;
+    border-radius: 50%;
+    color: #808080;
+    font-size: 20px;
+    position: relative;
+    line-height: 0;
+}
+.invoice-copy::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: -1px;
+}
+.form-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-buttons .submitnreset img {
+    max-width: 150px;
+}
+.form-buttons button.submitnreset {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.campaign {
+    margin-bottom: 4rem;
+}
+/* Form */
+
+
+/* Popup */
+.termsClick {
+    cursor: pointer;
+}
+.popupOuter {
+    position: fixed;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    opacity: 0;
+    transition: opacity .4s ease-in;
+}
+.popupOuter.show {
+    display: block;
+    opacity: 1;
+}
+.popupWraper {
+    width: 90%;
+    max-width: 700px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 4rem;
+    position: relative;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 8px 1px #000000;
+    box-shadow: 1px 1px 8px 1px #000000;
+}
+.popupWraper h6 {
+    color: #333333;
+    font-size: .9rem;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 1rem;
+}
+.popupWraper h3 {
+    font-weight: bold;
+}
+.popupWraper h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.popupWraper h5 {
+    font-size: .85rem;
+    font-weight: bold;
+}
+.popupContent {
+    color: #333333;
+    font-size: .7rem;
+    line-height: 1.8rem;    height: 350px;    overflow-y: scroll;
+    padding-right: 15px;
+    margin-top: 15px;
+}
+.popupContent::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+.popupContent::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.0);
+}
+ 
+.popupContent::-webkit-scrollbar-thumb {
+  background-color: #B3B3B3;
+  outline: none;
+}
+.popupClose {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #B3B3B3;
+    width: max-content;
+    position: absolute;
+    right: calc(4rem + 15px);
+    top: 2rem;
+    cursor: pointer;
+}
+.msgclose {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* SPINNER */
+.spinner {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.spinner::before {
+    content: "";
+    width: 50px;
+    height: 70px;
+    background: url('../images/price-lock.svg') top center no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+}
+.wheel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px #333, 0 0 0 1px #192a4c, 0 0 0 13px #192a4c;
+    transition: transform 5s ease-in-out;
+    z-index: 9;
+}
+.wheel::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 3px solid #192a4c;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.base {
+    position: absolute;
+    bottom: -60px;
+    z-index: 1;
+    width: 180px;
+    height: auto;
+}
+.wheel .number {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: var(--clr);
+    transform-origin: bottom right;
+    transform: rotate(calc(90deg * var(--i)));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+.wheel .number span {
+    position: relative;
+    transform:rotate(95deg);
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+    max-width: 150px;
+    /* text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.15),; */
+}
+.wheel .number span::after {
+    content: '';
+    position: absolute;
+    font-size: .75em;
+    font-weight: 500;
+}
+.spinBtn {
+    width: 160px;
+    cursor: pointer;
+}
+#voucher {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prize-image {
+    max-width: 100%;
+    width: 370px;
+}
+#voucher h2 small {
+    display: block;
+    font-size: 1.7rem;
+    width: 100%;
+}
+#voucher .disclaimer strong {
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+
+/* SPINNER ENDS */
+
+/* Media Query */
+@media only screen and (max-width: 767px) { 
+    .hide-sm {
+        display: none;
+    }
+    .sm-only {
+        display: flex;
+    }
+    .fontsize15  {
+        font-size: 2.5vh !important;
+    }
+    .outer-wraper {
+        background: url(../images/bg-sm.webp) no-repeat top center;
+    }
+    .header {
+        padding-top: 2vh;
+    }
+    .header a.logo {
+        height: auto;
+        display: flex;
+    }
+    .header a.logo img {
+        max-height: 10vh;
+    }
+    .win-cash h2 {
+        font-size: 3.5vh;
+        line-height: 4vh;
+    }
+    .win-cash img {
+        max-height: 23vh;
+        height: auto;
+    }
+    .termsspl img {
+        max-height: 4.8vh;
+    }
+    .select-lang a {
+        margin: 1vh 0;
+    }
+
+    
+}
